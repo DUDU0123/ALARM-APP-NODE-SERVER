@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', ()=>{
+router.get('/', (req,res)=>{
     return res.json({
         alarm: "Hi I will list all alarms"
     });
